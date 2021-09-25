@@ -2,7 +2,7 @@ Feature: Teste Pedido
   O cliente poderá pedir uma pizza online
 
   Scenario: cliente faz um pedido de pizza online
-    Given sao 22:00 horas
+    Given sao 21:00 horas
     Given cliente escolheu o tamanho da pizza X
     Given cliente escolheu o sabor da pizza
     Given cliente preencheu nome pedido
