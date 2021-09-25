@@ -3,10 +3,10 @@ Feature: Teste Pedido
 
   Scenario: cliente faz um pedido de pizza online
     Given sao 21:00 horas
-    Given cliente escolheu o tamanho da pizza X
-    Given cliente escolheu o sabor da pizza
-    Given cliente preencheu nome pedido
-    Given cliente preencheu telefone no pedido
+    Given cliente escolheu o tamanho da pizza 'grande'
+    Given cliente escolheu o sabor da pizza 'portuguesa'
+    Given cliente preencheu nome pedido 'Ze'
+    Given cliente preencheu telefone no pedido '1399829043'
     When cliente apertar Enviar pedido
-    Then cliente recebe informacao do valor do pedido
-    Then cliente recebe informacao do horario para busca
+    Then cliente recebe informacao do valor do pedido '50,00'
+    Then cliente recebe informacao do horario para busca '21:40'
